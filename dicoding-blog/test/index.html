@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Test</title>
+		<style>
+			.wrapper {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 10px;
+			}
+
+			.box1 {
+				grid-column-start: 1;
+				grid-column-end: 3;
+			}
+
+			.box2 {
+				grid-column-start: 3;
+				grid-row-start: 1;
+				grid-row-end: 3;
+			}
+
+			.box3 {
+				grid-column-start: 1;
+				grid-column-end: 3;
+			}
+
+			/* Styling pendukung */
+			.wrapper div {
+				padding: 32px;
+				border: 1px solid black;
+			}
+
+			/* coloring */
+			.box1,
+			.box4 {
+				background-color: mediumseagreen;
+			}
+
+			.box2,
+			.box6 {
+				background-color: steelblue;
+			}
+
+			.box3,
+			.box5 {
+				background-color: gold;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="box1">Satu</div>
+			<div class="box2">Dua</div>
+			<div class="box3">Tiga</div>
+			<div class="box4">Empat</div>
+			<div class="box5">Lima</div>
+			<div class="box6">Enam</div>
+		</div>
+	</body>
+</html>
